@@ -440,6 +440,12 @@ IB_DESIGNABLE
 @property (readonly, nonatomic) NSArray<NSDate *> *selectedDates;
 
 /**
+ The colors of top and bottom borders, defaults to 
+ */
+@property (nullable, strong, nonatomic) UIColor *topBorderColor;
+@property (nullable, strong, nonatomic) UIColor *bottomBorderColor;
+
+/**
  Reload the dates and appearance of the calendar.
  */
 - (void)reloadData;

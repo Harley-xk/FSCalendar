@@ -1065,6 +1065,22 @@ typedef NS_ENUM(NSUInteger, FSCalendarOrientation) {
     return self.delegateProxy.delegation;
 }
 
+- (void)setTopBorderColor:(UIColor *)topBorderColor {
+    self.topBorder.backgroundColor = topBorderColor ? topBorderColor : FSCalendarStandardLineColor;
+}
+
+- (UIColor *)topBorderColor {
+    return self.topBorder.backgroundColor;
+}
+
+- (void)setBottomBorderColor:(UIColor *)bottomBorderColor {
+    self.bottomBorder.backgroundColor = bottomBorderColor ? bottomBorderColor : FSCalendarStandardLineColor;
+}
+
+- (UIColor *)bottomBorderColor {
+    return  self.bottomBorder.backgroundColor;
+}
+
 #pragma mark - Public methods
 
 - (void)reloadData
